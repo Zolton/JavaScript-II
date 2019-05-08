@@ -137,6 +137,39 @@ console.log(ticketPriceTotal);
 
 // Problem 1
 
+//use map to list donation amounts
+
+let newDonations = runners.map(tally)
+
+function tally (jolly) {
+    return jolly.donation
+}
+
+console.log(newDonations)
+
 // Problem 2
+
+// use mapto scrape the array to sell people's information - our customer needs first name, last name, and email addresses
+
+
+let cashflow = []
+runners.forEach(dollars)
+
+function dollars (cash) {
+    cashflow.push(`To: ${cash.email} <br><br> Hello, Mr or Ms ${cash.first_name} ${cash.last_name}, we have an exciting offer for you today`)
+}
+
+console.log(cashflow)
+
+// Our research shows only people who work at companies that donated over $150 fall for this.  Filter them out
+
+let suckers = runners.filter(haha)
+
+function haha(x) {
+    if (x.donation > 150)
+    return x.first_name + x.last_name + x.email + x.donation
+}
+
+console.log(suckers)
 
 // Problem 3

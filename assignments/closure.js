@@ -8,8 +8,16 @@
   let a = 2
 }
 
-
 console.log(a)
+//nothing
+
+{
+  let b = 2;
+  return b
+}
+
+console.log(b);
+//b = 2
 
 
 
