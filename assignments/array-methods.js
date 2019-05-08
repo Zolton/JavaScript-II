@@ -149,7 +149,7 @@ console.log(newDonations)
 
 // Problem 2
 
-// use mapto scrape the array to sell people's information - our customer needs first name, last name, and email addresses
+// use map to scrape the array to sell people's information - our customer needs first name, last name, and email addresses
 
 
 let cashflow = []
@@ -163,13 +163,18 @@ console.log(cashflow)
 
 // Our research shows only people who work at companies that donated over $150 fall for this.  Filter them out
 
-let suckers = runners.filter(haha)
+let suckers = runners.filter(haha).map(dollaBillsRain)
 
-function haha(x) {
-    if (x.donation > 150)
-    return x.first_name + x.last_name + x.email + x.donation
+function haha(lol) {
+    if (lol.donation > 150)
+    return lol.first_name + lol.last_name + lol.email + lol.donation
+}
+
+function dollaBillsRain (lul) {
+    return (`${lul.first_name}  - ${lul.last_name} - ${lul.email} - ${lul.donation}`)
 }
 
 console.log(suckers)
 
 // Problem 3
+
