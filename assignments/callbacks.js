@@ -61,10 +61,9 @@ function contains(items, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
   
-  return cb(list.includes(items).toString());
+  return (list.includes(items).toString());
 };
-
-  console.log(contains('Pencil', items, cb));
+  console.log(contains('Pencil', items));
   
   // Previous solution I was working on ------
 
@@ -85,20 +84,30 @@ function removeDuplicates(array, cb) {
   // removeDuplicates removes all duplicate values from the given array.
   // Pass the duplicate free array to the callback function.
   // Do not mutate the original array.
-  let newArray = array.map(reduction)
+  
+  //----Previous attempt-----------
+//   let newArray = items.filter(reduction)
 
-  function reduction(xxx) {
-    if (xxx.value !== xxx.value) {
-      return xxx.value
-    }
-    
-    console.log(newArray);
+//   function reduction(xxx) {
+//     if (xxx.value !== xxx.value) {
+//       return true
+//     } 
+//     console.log(newArray);
 
 
-  newArray.map (
-    if (newArray.value == array.value) {
-    cb(newArray.value)
-    }
-  )
+// function test() {
+//     if (newArray.value == array.value) {
+//     return true
+//     }
+//   }
+  
+// }
+// }
 }
-}
+
+
+let notDupe = items.filter((item, index) => {
+  return items.indexOf(item) >= index;
+});
+
+console.log(notDupe);
