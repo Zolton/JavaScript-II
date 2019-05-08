@@ -161,7 +161,10 @@ function dollars (cash) {
 
 console.log(cashflow)
 
-// Our research shows only people who work at companies that donated over $150 fall for this.  Filter them out
+// Problem 3
+// Our research shows only people who work at companies that donated over $150 fall for this.  
+// Filter them out, then give us an organized list of the their names, emails, and how much they gave. 
+// We don't need their shirt size
 
 let suckers = runners.filter(haha).map(dollaBillsRain)
 
@@ -170,11 +173,11 @@ function haha(lol) {
     return lol.first_name + lol.last_name + lol.email + lol.donation
 }
 
-function dollaBillsRain (lul) {
-    return (`${lul.first_name}  - ${lul.last_name} - ${lul.email} - ${lul.donation}`)
+function dollaBillsRain (payday) {
+    return (`${payday.first_name} ${payday.last_name} - ${payday.email} - $${payday.donation}`)
 }
 
 console.log(suckers)
 
-// Problem 3
+
 
